@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar Generator</title>
+	<link rel="stylesheet" href="../app/style.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../app/print.css" media="print">
+</head>
+<body>
+	<header>
+		Generate a Calendar for 12 months of
+		<select name="year" id="year">
+		</select>
+		starting in
+		<select name="month" id="month">
+			<option value="0">January</option>
+			<option value="1">February</option>
+			<option value="2">March</option>
+			<option value="3">April</option>
+			<option value="4">May</option>
+			<option value="5">June</option>
+			<option value="6">July</option>
+			<option value="7">August</option>
+			<option value="8">September</option>
+			<option value="9">October</option>
+			<option value="10">November</option>
+			<option value="11">December</option>
+		</select>
+		<button id="generate">Generate!</button>
+		<br>
+		<div style="font-size:10px;width:25%"><a href="https://github.com/wittman/calendargen">calendargen</a> calendar template/generator is based on <a href="https://github.com/jpraetorius/calendar-maker">calendar-maker</a></div>
+	</header>
+
+	<div class="inscription">
+		<h2>Birds in Season</h2>
+		<p>A collection of John Denver Beetham's photographs of birds and landscapes, curated by Micah Wittman in memory of John and his passion for nature, and especially his measure of care and appreciation for our feathered friends.</p>
+		<p>Each bird was photographed on the month and day in which it is perched in this calendar; each landscape was captured in the month it appears.</p>
+		<p>All images are indexed with links to the source, John's photo archive, on the pages following December.</p>
+		<p>#forJohn</p>
+	</div>
+
+		<script src="app-data.js"></script>
+		<script src="../app/app.js"></script>
+
+</body>
+</html>

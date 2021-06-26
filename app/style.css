@@ -1,0 +1,148 @@
+body {
+	font-family: 'Avenir Next', Helvetica, Arial;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 10px 20px;
+	border-bottom: 1px solid #aaa;
+	font-size: 1.2em;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 68pt;
+	font-weight: 400;
+	margin: 32pt 0 62pt 0;
+}
+
+h1 sup {
+	font-size: 26px;
+	margin-left: 8px;
+	position: relative;
+	vertical-align: text-top;
+}
+
+h1 span {
+	margin-left: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.monthbg {
+	background-repeat: no-repeat;
+	background-size: 239px;
+	width: 239px;
+	height: 180px;
+	background-position: center;
+	margin: 0 auto;
+}
+
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 4.14cm);
+	grid-auto-rows: 5.15cm;
+	margin: 0 auto;
+	width: 29cm;
+	max-width: 29cm;
+	border-left: 1px solid #000;
+}
+
+.empty {
+	border-bottom: 1px solid #000;
+}
+
+.empty:first-of-type {
+	outline: 1px solid #fff;
+}
+
+.day {
+	position: relative;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 5px 10px;
+}
+
+.empty + .day {
+	border-left: 1px solid #000;
+}
+
+.top {
+	border-top: 1px solid #000;
+}
+
+.weekday {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 11pt;
+}
+
+.day > h2 {
+	width: 100%;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-size: 28pt;
+	font-weight: 400;
+	margin-top: -7pt;
+}
+
+.wi {
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position:  center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid rgb(80,80,80);
+	margin-top: -19px;
+	margin-left: 16px;
+}
+
+.wt {
+	text-align: center;
+	margin-top: 3px;
+}
+
+.legend-item {
+	margin-bottom: 4px;
+	padding: 8px;
+}
+
+.inscription {
+	padding: 1em;
+	width: 33%;
+	position: absolute;
+}
+
+.footer {
+	padding: 8px;
+	margin: 8cm auto auto auto;
+	width: 29cm;
+	max-width: 29cm;
+	background-repeat: no-repeat;
+	background: linear-gradient(rgba(173, 211, 227, 0.78), rgba(173, 211, 227, 0.05));
+	background-blend-mode: overlay;
+	background-size: 100%;
+	margin: 0 auto;
+}
+
+.footerhead {
+	padding: 8px;
+	margin: 8cm auto auto auto;
+	width: 29cm;
+	max-width: 29cm;
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255, .3);
+	background-blend-mode: overlay;
+	background-size: 100%;
+	height: 240px;
+	background-position: center;
+	margin: 0 auto;
+}

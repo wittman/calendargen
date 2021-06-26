@@ -1,0 +1,6 @@
+/* styles to cascade after "../app/style.css" */
+
+.footer {
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.9));
+	background-blend-mode: overlay;
+}
