@@ -8,7 +8,7 @@ Generate calendars (locally via browser/javascript) with optional images placed 
 
 Clone/download unzip to local file system.
 
-There are two photo calendars samples:
+There are two photo calendar samples:
 
 `/calendargen`  
 `|- /birds-in-season`  
@@ -21,7 +21,7 @@ and a blank template:
 
 ## Simplest use:
 
-- Make a copy of `/blank-template` directory and rename it as a starter for your own calendar - for reference here let's call it `/my-calendar`.
+- Make a copy of `/blank-template` directory and rename it as a starter for your own calendar—for reference here let's call it `/my-calendar`.
 
 - In browser use <em>File > Open File</em> and choose `/my-calendar/index.html`.
 
@@ -43,7 +43,7 @@ The core app files are:
 `|--- style.css`  
 `|--- print.css`
 
-Customize styles per calendar (add declaration in style.css):  
+Customize styles per calendar (add declarations in style.css):  
 `/calendargen`  
 `|- /my-calendar`  
 `|--- style.css`
@@ -54,7 +54,7 @@ _Month-day_ images are set as background in a 100x100px container as scaled with
 _Month_ images are backgrounds in a 239px wide x 180px high container, scaled to background-size: 239px.
 
 **To add _month-day_ photos there are two steps:**
-1. Name image month-day (`1-8.jpg` for Jan 8th. And `12-29.png` for Dec 29th) and place files in `/my-calendar/img`.
+1. Name image month-day (e.g. `1-8.jpg` for Jan 8th. And `12-29.png` for Dec 29th) and place files in `/my-calendar/img`.
 2. Edit `/my-calendar/app-data.js` and add a property-value to `const imgs` (more details below).
 
 Define the photo data (image file names, captions, links):  
@@ -69,7 +69,7 @@ The `imgs` object property's key is an array.
 index:  
  `[0]` is URL to original image source online
 
- `[1]` is image caption (text or html, but if html only markup with one enclosing tag such as `<span style="font-size:9px">Make A Long Caption Fit</span>`)
+ `[1]` is image caption (text or html, but if html then only markup with one enclosing tag such as `<span style="font-size:9px">Make A Long Caption Fit</span>`)
 
  `[2]` is css style that may be needed (such as background-size, background-position)
 
@@ -82,7 +82,7 @@ To add month images uses the above month-day conventions except:
 - Define data in `const monimgs`.
 
 ### Odds & Ends
-Compatibility: Tested in Chrome, Firefox and Safari (curiously, Firefox and Safari have almost instant print preview rendering and Chrome takes about several seconds or more).
+Compatibility: Tested in Chrome, Firefox and Safari (curiously, Firefox and Safari have almost instant print preview rendering and Chrome takes several seconds or more).
 
 Another oddity: Firefox on Windows does not display the calendar box borders in print preview, but they appear normally when printed.
 
