@@ -4,6 +4,13 @@ Generate calendars (locally via browser/javascript) with optional images placed 
 ![Screencap - January](./birds-in-season/screencap-jan.png)
 ![Screencap - February](./birds-in-season/screencap-feb.png)
 
+## See live examples:
+[Calendar - Birds In Season](https://wittman.github.io/calendargen/birds-in-season/index.html)
+
+[Calendar - Space Exploration](https://wittman.github.io/calendargen/space-exploration/index.html)
+
+[Calendar - Blank Template](https://wittman.github.io/calendargen/blank-template/index.html)
+
 ## Use as a template for your own photo calendars
 
 Clone/download unzip to local file system.
